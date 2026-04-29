@@ -1,7 +1,3 @@
-module Api
-  module V1
-
-
 class ApplicationController < ActionController::API
   before_action :authenticate_request!
 
@@ -25,5 +21,3 @@ class ApplicationController < ActionController::API
     render json: { error: 'Accesso negato: solo Admin' }, status: :forbidden unless @current_user.admin?
   end
 end
-    end
-        end
