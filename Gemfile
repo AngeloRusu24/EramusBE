@@ -7,6 +7,7 @@ gem "bcrypt", "~> 3.1.7"
 gem "jwt"
 gem "dotenv-rails"
 gem "rack-cors"
+gem "kaminari"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "solid_cache"
 gem "solid_queue"
