@@ -18,7 +18,7 @@ Rails.application.routes.draw do
       resources :prodotti, only: [:index, :show, :create, :update, :destroy]
       resources :movimenti, only: [:index, :create]
       resources :tipo_prodotto, only: [:index]
-      resources :ruoli, only: [:index]
+      resources :ruoli, only: [:index, :update]
     end
   end
 end
