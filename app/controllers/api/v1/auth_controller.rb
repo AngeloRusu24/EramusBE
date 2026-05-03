@@ -1,7 +1,6 @@
 module Api
   module V1
-
-class AuthController < ApplicationController
+    class AuthController < ApplicationController
   skip_before_action :authenticate_request!, only: [:login, :refresh, :forgot_password, :reset_password]
  
   # POST /auth/login
